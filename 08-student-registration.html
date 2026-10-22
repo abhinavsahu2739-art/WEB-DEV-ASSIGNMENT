@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="form-shell">
+    <div class="form-intro"><p class="eyebrow">STUDENT SERVICES</p><h1>Student registration</h1><p class="lead">Fill in the details below to complete the sample registration form.</p><p class="muted">Fields marked * are required.</p></div>
+    <form action="#" method="post">
+      <fieldset><legend>Personal information</legend><div class="form-grid">
+        <label>Full name *<input type="text" name="fullName" autocomplete="name" placeholder="Enter your full name" required></label>
+        <label>Date of birth *<input type="date" name="dob" required></label>
+        <label>Email address *<input type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label>Phone number<input type="tel" name="phone" autocomplete="tel" placeholder="+91"></label>
+        <label>Gender
+          <select name="gender"><option value="">Select an option</option><option>Female</option><option>Male</option><option>Non-binary</option><option>Prefer not to say</option></select>
+        </label>
+        <label>City<input type="text" name="city" autocomplete="address-level2" placeholder="Your city"></label>
+      </div></fieldset>
+      <fieldset><legend>Academic information</legend><div class="form-grid">
+        <label>Course *<select name="course" required><option value="">Choose a course</option><option>BCA</option><option>BBA</option><option>B.Com</option><option>BA</option><option>B.Sc</option><option>Other</option></select></label>
+        <label>Academic year *<select name="year" required><option value="">Choose year</option><option>First year</option><option>Second year</option><option>Third year</option></select></label>
+        <label class="full-width">Previous school / college<input type="text" name="previousInstitution" placeholder="Institution name"></label>
+      </div></fieldset>
+      <label class="check-label"><input type="checkbox" name="confirm" required> I confirm that the information entered is accurate.</label>
+      <div class="form-actions"><button class="button" type="submit">Submit registration</button><button class="button button-secondary" type="reset">Clear form</button></div>
+      <p class="muted small">Demo only: this form does not send or store information because no backend is connected.</p>
+    </form>
+  </main>
+</body>
+</html>

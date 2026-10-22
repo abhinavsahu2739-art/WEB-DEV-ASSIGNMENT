@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="form-shell">
+    <div class="form-intro"><p class="eyebrow">CAREERS</p><h1>Job application</h1><p class="lead">Use this professional sample form to apply for an advertised position.</p><p class="muted">Fields marked * are required.</p></div>
+    <form action="#" method="post">
+      <fieldset><legend>Contact details</legend><div class="form-grid">
+        <label>Full name *<input type="text" name="fullName" autocomplete="name" required placeholder="Your full name"></label>
+        <label>Email address *<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label>Phone number *<input type="tel" name="phone" autocomplete="tel" required placeholder="+91-XXXXXXXXXX"></label>
+        <label>City / location<input type="text" name="location" autocomplete="address-level2" placeholder="Your city"></label>
+      </div></fieldset>
+      <fieldset><legend>Role and experience</legend><div class="form-grid">
+        <label>Position applied for *<select name="position" required><option value="">Select a role</option><option>Web Development Intern</option><option>Frontend Developer</option><option>Data Analyst Intern</option><option>Customer Support Associate</option><option>Other</option></select></label>
+        <label>Availability *<select name="availability" required><option value="">Select availability</option><option>Full-time</option><option>Part-time</option><option>Internship</option><option>Remote</option></select></label>
+        <label>Experience level<select name="experience"><option>Entry-level / Fresher</option><option>Less than 1 year</option><option>1–3 years</option><option>3+ years</option></select></label>
+        <label>Portfolio / LinkedIn URL<input type="url" name="portfolio" placeholder="https://example.com"></label>
+        <label class="full-width">Relevant skills<textarea name="skills" rows="3" placeholder="List skills relevant to this role"></textarea></label>
+        <label class="full-width">Why are you a good fit? *<textarea name="coverLetter" rows="5" required placeholder="Briefly describe your interest and strengths"></textarea></label>
+        <label class="full-width">Upload resume (PDF)<input type="file" name="resume" accept=".pdf,application/pdf"></label>
+      </div></fieldset>
+      <label class="check-label"><input type="checkbox" name="consent" required> I confirm that the information provided is accurate and may be used to review this application.</label>
+      <div class="form-actions"><button class="button" type="submit">Submit application</button><button class="button button-secondary" type="reset">Reset</button></div>
+      <p class="muted small">Demo only: no application is sent or stored. A real upload and submission require a secure backend.</p>
+    </form>
+  </main>
+</body>
+</html>
